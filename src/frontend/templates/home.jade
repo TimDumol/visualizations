@@ -1,0 +1,22 @@
+#home
+  p Assumptions:
+  ul
+    li Deposits start at the start of the first month
+    li Interest accumulates monthly (at rate (annual interest rate)^1/12)
+  .control-group
+    label
+      div Goal balance
+      input(type='number', placeholder='Goal', ng-model='goal')
+    label
+      div Starting balance
+      input(type='number', placeholder='Goal', ng-model='startBalance')
+    label
+      div Monthly deposit 
+      input(type='number', placeholder='Goal', ng-model='deposit')
+    label
+      div Annual Interest Rate
+      input(type='number', placeholder='Annual Interest Rate', ng-model='interest')
+    label
+      div Project until
+      input(type='number', placeholder='Year', ng-model='maxYear')
+  #time-graph

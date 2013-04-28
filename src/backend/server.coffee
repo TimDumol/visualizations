@@ -2,7 +2,7 @@
 
 express = require 'express'
 app = express()
-r = require 'rethinkdb'
+fs = require 'fs'
 Q = require 'q'
 winston = require 'winston'
 _ = require 'underscore'

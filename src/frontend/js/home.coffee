@@ -5,7 +5,6 @@ module = angular.module 'tjd.viz.home', [
 ]
 
 module.controller 'HomeCtrl', ['$scope', 'd3', '$log', ($scope, d3, $log) ->
-  $scope.goal = 10000000
   $scope.startBalance = 10000
   $scope.deposit = 1000
   $scope.interest = 0.08
@@ -19,7 +18,6 @@ module.controller 'HomeCtrl', ['$scope', 'd3', '$log', ($scope, d3, $log) ->
     numYTicks = 10
     xPad = 150
     yPad = 40
-    goal = +$scope.goal
     startBalance = +$scope.startBalance
     deposit = +$scope.deposit
     annualInterest = +$scope.interest
